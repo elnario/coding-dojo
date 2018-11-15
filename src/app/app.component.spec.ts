@@ -36,8 +36,8 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('button.sumar').textContent).toEqual('Sumar');
-    expect(compiled.querySelector('input[type=text].operando1') === null).toBe(false);
-    expect(compiled.querySelector('input[type=text].operando2') === null).toBe(false);
+    expect(compiled.querySelector('input[type=number].operando1') === null).toBe(false);
+    expect(compiled.querySelector('input[type=number].operando2') === null).toBe(false);
     expect(compiled.querySelector('label.resultado') === null).toBe(false);
   });
 
