@@ -63,12 +63,18 @@ When the normal game rules have become too easy/boring you might consider adding
 - Introduce _Card Drawer_ cards that cost Mana but don't do any damage. Instead they let you draw a given number of cards from your deck. Those cards can be used in the current turn or later on (just as if normally drawn at the beginning of the active player's turn).
 - Allow players to create their own decks of 20 cards from a larger _Card Pool_. Let those decks be saved to and loaded from disk before starting a game.
 
-## Static Code Analysis
+## Casos de prueba para el Jugador
 
-### Java [![Coverage Status](https://coveralls.io/repos/bkimminich/kata-tcg/badge.png?branch=master)](https://coveralls.io/r/bkimminich/kata-tcg?branch=master) [![Dependency Status](https://www.versioneye.com/user/projects/544a3042c310f980320000d1/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3042c310f980320000d1)
-
-### Javascript [![Test Coverage](https://codeclimate.com/github/bkimminich/kata-tcg/badges/coverage.svg)](https://codeclimate.com/github/bkimminich/kata-tcg) [![Code Climate](https://codeclimate.com/github/bkimminich/kata-tcg/badges/gpa.svg)](https://codeclimate.com/github/bkimminich/kata-tcg) [![Dependency Status](https://www.versioneye.com/user/projects/544a3040c310f96cf00000fa/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3040c310f96cf00000fa)
-
-### Groovy [![Dependency Status](https://www.versioneye.com/user/projects/544a3042c310f90e740000ce/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3042c310f90e740000ce)
-
-### Clojure [![Dependency Status](https://www.versioneye.com/user/projects/544a3042c310f9bcb5000126/badge.svg?style=flat)](https://www.versioneye.com/user/projects/544a3042c310f9bcb5000126)
+- Debe tener Nombre
+- Debe Iniciar con 30 vidas
+- Debe iniciar con un mazo de 20 cartas default [0, 0, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 7, 8]
+- Debe iniciar con una mano vacia
+- Debe iniciar con una mana vacio
+- Debe iniciar con un maximo de mana cero
+- Al robar una carta, mueve la carta al tope del mazo a tu mano
+- Descarta una carta cuando robas y tienes 5 cartas en mano
+- Si no puedes robar carta, pierdes una vida
+- Al jugar una carta de daño, el oponente pierde vidas igual al valor de la carta.
+- Al jugar una carta de daño, el jugador pierde mana igual al valor de la carta
+- Al jugar una carta de daño, se descarta de la mano
+- Al barajar el mazo, cambia el orden de las cartas
