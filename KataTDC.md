@@ -78,3 +78,15 @@ When the normal game rules have become too easy/boring you might consider adding
 - Al jugar una carta de daño, el jugador pierde mana igual al valor de la carta
 - Al jugar una carta de daño, se descarta de la mano
 - Al barajar el mazo, cambia el orden de las cartas
+
+## Casos de prueba para el Juego de Cartas
+
+- Debe tener un jugador Activo y un oponente.
+- Al iniciar El juego los jugadores deben barajar su mazo.
+- El jugador activo debe Iniciar con 3 cartas.
+- El oponente debe Iniciar con 4 cartas.
+- Al iniciar un turno, aumenta el maximo de mana del jugador activo.
+- El maximo de mana no puede ser mayor de 10.
+- Al inicar un turno rellena el mana del jugador activo al maximo.
+- Al inicar un turno el jugador activo roba una carta.
+- Al finalizar un turno se deben intercambiar el jugador activo y el oponente.
