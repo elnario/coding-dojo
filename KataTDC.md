@@ -70,7 +70,7 @@ When the normal game rules have become too easy/boring you might consider adding
 - Debe iniciar con un mazo de 20 cartas default [0, 0, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 7, 8]
 - Debe iniciar con una mano vacia
 - Debe iniciar con una mana vacio
-- Debe iniciar con un maximo de mana cero
+- Debe iniciar con un cero contadores de mana
 - Al robar una carta, mueve la carta al tope del mazo a tu mano
 - Descarta una carta cuando robas y tienes 5 cartas en mano
 - Si no puedes robar carta, pierdes una vida
@@ -86,7 +86,7 @@ When the normal game rules have become too easy/boring you might consider adding
 - El jugador activo debe Iniciar con 3 cartas.
 - El oponente debe Iniciar con 4 cartas.
 - Al iniciar un turno, aumenta el maximo de mana del jugador activo.
-- El maximo de mana no puede ser mayor de 10.
+- Un jugador puede tener maximo 10 contadores de mana.
 - Al inicar un turno rellena el mana del jugador activo al maximo.
 - Al inicar un turno el jugador activo roba una carta.
 - Al finalizar un turno se deben intercambiar el jugador activo y el oponente.
