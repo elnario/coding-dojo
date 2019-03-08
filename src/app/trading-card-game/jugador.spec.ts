@@ -35,8 +35,8 @@ describe('Jugador', () => {
 
   });
 
-  it('Debe iniciar con un maximo de mana cero', () => {
-    expect(jugador.mana_maximo).toBe(0);
+  it('Debe iniciar con un cero contadores de mana', () => {
+    expect(jugador.contadores_mana).toBe(0);
 
   });
 
@@ -108,11 +108,11 @@ describe('Jugador', () => {
   it('Al barajar el mazo, cambia el orden de las cartas', () => {
 
     const mazo = [1, 2, 3, 4, 5, 1];
-    jugador.mazo = mazo;
-    jugador.barajar();
+    jugador.mazo = mazo.slice(0);
+    jugador.barajarMazo();
 
     expect(jugador.mazo).not.toEqual(mazo);
-    //expect(jugador.mazo.length).toBe(mazo.length);
+    expect(jugador.mazo.length).toBe(mazo.length);
     expect(mazo.every(e => jugador.mazo.indexOf(e) !== -1)).toBe(true);
 
   });
