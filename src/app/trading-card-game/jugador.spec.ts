@@ -1,5 +1,4 @@
 import { Jugador } from './jugador';
-import { checkBindingNoChanges } from '@angular/core/src/view/util';
 
 describe('Jugador', () => {
   let jugador: Jugador;
